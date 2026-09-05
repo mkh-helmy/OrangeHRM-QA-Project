@@ -1,0 +1,5 @@
+com\orangehrm\tests\DirectoryTests.class
+com\orangehrm\tests\MyInfoTests.class
+com\orangehrm\tests\LoginTests.class
+base\ConfigReader.class
+com\orangehrm\base\BaseTest.class

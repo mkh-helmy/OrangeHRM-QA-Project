@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">OrangeHRM Automation Suite</th></tr>
+<tr><td><a href="#t0">Regression</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">242,561</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRM Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.orangehrm.tests.DirectoryTests</td><td><a href="#m0">testSearchWithNonExistentEmployeeName</a></td><td rowspan="1">1788597561394</td><td rowspan="1">18854</td></tr><tr class="failedodd"><td rowspan="1">com.orangehrm.tests.LoginTests</td><td><a href="#m1">testForgotPasswordWithValidUser</a></td><td rowspan="1">1788597409079</td><td rowspan="1">112499</td></tr><tr class="failedeven"><td rowspan="1">com.orangehrm.tests.MyInfoTests</td><td><a href="#m2">testMissingMandatoryIndicatorOnPhoneFields</a></td><td rowspan="1">1788597529487</td><td rowspan="1">6038</td></tr><tr><th colspan="4">Regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.orangehrm.tests.LoginTests</td><td><a href="#m3">testInvalidLogin</a></td><td rowspan="1">1788597374369</td><td rowspan="1">20188</td></tr><tr class="passedeven"><td><a href="#m4">testValidLogin</a></td><td rowspan="1">1788597356744</td><td rowspan="1">4715</td></tr><tr class="passedodd"><td rowspan="1">com.orangehrm.tests.MyInfoTests</td><td><a href="#m5">testInvalidPhoneNumberFormat</a></td><td rowspan="1">1788597545209</td><td rowspan="1">6705</td></tr></tbody>
+</table>
+<h2>Regression</h2><h3 id="m0">com.orangehrm.tests.DirectoryTests#testSearchWithNonExistentEmployeeName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Directory&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.2.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\mkh\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62621}, goog:processID: 25060, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62621/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f518af2bf9e8545c9f2a54bb146d2f9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.orangehrm.pages.DirectoryPage.navigateToDirectory(DirectoryPage.java:28)
+	at com.orangehrm.tests.DirectoryTests.testSearchWithNonExistentEmployeeName(DirectoryTests.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.orangehrm.tests.LoginTests#testForgotPasswordWithValidUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: BUG-001 confirmed: System returned a raw 504 Gateway Time-out page instead of the expected success message. expected [false] but found [true]
+	at com.orangehrm.tests.LoginTests.testForgotPasswordWithValidUser(LoginTests.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.orangehrm.tests.MyInfoTests#testMissingMandatoryIndicatorOnPhoneFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: BUG-002 confirmed: None of the phone fields (Home Telephone, Mobile, Work Telephone) display a mandatory (*) indicator, even though the system enforces a mandatory phone number rule upon saving. expected [true] but found [false]
+	at com.orangehrm.tests.MyInfoTests.testMissingMandatoryIndicatorOnPhoneFields(MyInfoTests.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.orangehrm.tests.LoginTests#testInvalidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.orangehrm.tests.LoginTests#testValidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.orangehrm.tests.MyInfoTests#testInvalidPhoneNumberFormat</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

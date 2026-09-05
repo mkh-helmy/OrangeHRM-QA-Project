@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRM Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+  </listeners>
+  <test thread-count="5" name="Regression(failed)" verbose="0">
+    <classes>
+      <class name="com.orangehrm.tests.DirectoryTests">
+        <methods>
+          <include name="testSearchWithNonExistentEmployeeName"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.orangehrm.tests.DirectoryTests -->
+      <class name="com.orangehrm.tests.LoginTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testForgotPasswordWithValidUser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.orangehrm.tests.LoginTests -->
+      <class name="com.orangehrm.tests.MyInfoTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testMissingMandatoryIndicatorOnPhoneFields"/>
+        </methods>
+      </class> <!-- com.orangehrm.tests.MyInfoTests -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [OrangeHRM Automation Suite] -->

@@ -1,0 +1,4 @@
+com\orangehrm\pages\BasePage.class
+com\orangehrm\pages\MyInfoPage.class
+com\orangehrm\pages\LoginPage.class
+com\orangehrm\pages\DirectoryPage.class

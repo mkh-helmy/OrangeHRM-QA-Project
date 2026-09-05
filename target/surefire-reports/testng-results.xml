@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-05T11:35:38 EEST" name="OrangeHRM Automation Suite" finished-at="2026-09-05T11:39:40 EEST" duration-ms="242561">
+    <groups>
+    </groups>
+    <test started-at="2026-09-05T11:35:38 EEST" name="Regression" finished-at="2026-09-05T11:39:40 EEST" duration-ms="242561">
+      <class name="com.orangehrm.tests.MyInfoTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.MyInfoTests@b9b00e0]" started-at="2026-09-05T11:38:42 EEST" name="setUp" finished-at="2026-09-05T11:38:49 EEST" duration-ms="6500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMissingMandatoryIndicatorOnPhoneFields()[pri:1, instance:com.orangehrm.tests.MyInfoTests@b9b00e0]" started-at="2026-09-05T11:38:49 EEST" name="testMissingMandatoryIndicatorOnPhoneFields" description="Verify mandatory phone number validation lacks a visual indicator" finished-at="2026-09-05T11:38:55 EEST" duration-ms="6038" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[BUG-002 confirmed: None of the phone fields (Home Telephone, Mobile, Work Telephone) display a mandatory (*) indicator, even though the system enforces a mandatory phone number rule upon saving. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: BUG-002 confirmed: None of the phone fields (Home Telephone, Mobile, Work Telephone) display a mandatory (*) indicator, even though the system enforces a mandatory phone number rule upon saving. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.orangehrm.tests.MyInfoTests.testMissingMandatoryIndicatorOnPhoneFields(MyInfoTests.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMissingMandatoryIndicatorOnPhoneFields -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.MyInfoTests@b9b00e0]" started-at="2026-09-05T11:38:55 EEST" name="tearDown" finished-at="2026-09-05T11:38:56 EEST" duration-ms="852" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMissingMandatoryIndicatorOnPhoneFields status=FAILURE method=MyInfoTests.testMissingMandatoryIndicatorOnPhoneFields()[pri:1, instance:com.orangehrm.tests.MyInfoTests@b9b00e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.MyInfoTests@b9b00e0]" started-at="2026-09-05T11:38:56 EEST" name="setUp" finished-at="2026-09-05T11:39:05 EEST" duration-ms="8818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidPhoneNumberFormat()[pri:2, instance:com.orangehrm.tests.MyInfoTests@b9b00e0]" started-at="2026-09-05T11:39:05 EEST" name="testInvalidPhoneNumberFormat" description="Verify invalid phone number format is rejected in the Mobile field" finished-at="2026-09-05T11:39:11 EEST" duration-ms="6705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPhoneNumberFormat -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.MyInfoTests@b9b00e0]" started-at="2026-09-05T11:39:11 EEST" name="tearDown" finished-at="2026-09-05T11:39:13 EEST" duration-ms="1353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidPhoneNumberFormat status=SUCCESS method=MyInfoTests.testInvalidPhoneNumberFormat()[pri:2, instance:com.orangehrm.tests.MyInfoTests@b9b00e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangehrm.tests.MyInfoTests -->
+      <class name="com.orangehrm.tests.LoginTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.LoginTests@3c7f66c4]" started-at="2026-09-05T11:35:38 EEST" name="setUp" finished-at="2026-09-05T11:35:56 EEST" duration-ms="18300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:1, instance:com.orangehrm.tests.LoginTests@3c7f66c4]" started-at="2026-09-05T11:35:56 EEST" name="testValidLogin" description="Verify successful login with valid credentials" finished-at="2026-09-05T11:36:01 EEST" duration-ms="4715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.LoginTests@3c7f66c4]" started-at="2026-09-05T11:36:01 EEST" name="tearDown" finished-at="2026-09-05T11:36:05 EEST" duration-ms="3621" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=LoginTests.testValidLogin()[pri:1, instance:com.orangehrm.tests.LoginTests@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.LoginTests@3c7f66c4]" started-at="2026-09-05T11:36:05 EEST" name="setUp" finished-at="2026-09-05T11:36:14 EEST" duration-ms="9167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLogin()[pri:2, instance:com.orangehrm.tests.LoginTests@3c7f66c4]" started-at="2026-09-05T11:36:14 EEST" name="testInvalidLogin" description="Verify login fails with invalid credentials" finished-at="2026-09-05T11:36:34 EEST" duration-ms="20188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.LoginTests@3c7f66c4]" started-at="2026-09-05T11:36:34 EEST" name="tearDown" finished-at="2026-09-05T11:36:38 EEST" duration-ms="4117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=LoginTests.testInvalidLogin()[pri:2, instance:com.orangehrm.tests.LoginTests@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.LoginTests@3c7f66c4]" started-at="2026-09-05T11:36:38 EEST" name="setUp" finished-at="2026-09-05T11:36:49 EEST" duration-ms="10147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testForgotPasswordWithValidUser()[pri:3, instance:com.orangehrm.tests.LoginTests@3c7f66c4]" started-at="2026-09-05T11:36:49 EEST" name="testForgotPasswordWithValidUser" description="Verify Forgot Password flow with a valid username" finished-at="2026-09-05T11:38:41 EEST" duration-ms="112499" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[BUG-001 confirmed: System returned a raw 504 Gateway Time-out page instead of the expected success message. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: BUG-001 confirmed: System returned a raw 504 Gateway Time-out page instead of the expected success message. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at com.orangehrm.tests.LoginTests.testForgotPasswordWithValidUser(LoginTests.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForgotPasswordWithValidUser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.LoginTests@3c7f66c4]" started-at="2026-09-05T11:38:41 EEST" name="tearDown" finished-at="2026-09-05T11:38:42 EEST" duration-ms="1290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testForgotPasswordWithValidUser status=FAILURE method=LoginTests.testForgotPasswordWithValidUser()[pri:3, instance:com.orangehrm.tests.LoginTests@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangehrm.tests.LoginTests -->
+      <class name="com.orangehrm.tests.DirectoryTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.tests.DirectoryTests@506ae4d4]" started-at="2026-09-05T11:39:13 EEST" name="setUp" finished-at="2026-09-05T11:39:21 EEST" duration-ms="8114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchWithNonExistentEmployeeName()[pri:1, instance:com.orangehrm.tests.DirectoryTests@506ae4d4]" started-at="2026-09-05T11:39:21 EEST" name="testSearchWithNonExistentEmployeeName" description="Verify Directory rejects a name with no matching employee" finished-at="2026-09-05T11:39:40 EEST" duration-ms="18854" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()='Directory'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\mkh\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62621}, goog:processID: 25060, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62621/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f518af2bf9e8545c9f2a54bb146d2f9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()='Directory'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\mkh\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62621}, goog:processID: 25060, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62621/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f518af2bf9e8545c9f2a54bb146d2f9
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.orangehrm.pages.DirectoryPage.navigateToDirectory(DirectoryPage.java:28)
+at com.orangehrm.tests.DirectoryTests.testSearchWithNonExistentEmployeeName(DirectoryTests.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchWithNonExistentEmployeeName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.orangehrm.tests.DirectoryTests@506ae4d4]" started-at="2026-09-05T11:39:40 EEST" name="tearDown" finished-at="2026-09-05T11:39:40 EEST" duration-ms="496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSearchWithNonExistentEmployeeName status=FAILURE method=DirectoryTests.testSearchWithNonExistentEmployeeName()[pri:1, instance:com.orangehrm.tests.DirectoryTests@506ae4d4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangehrm.tests.DirectoryTests -->
+    </test> <!-- Regression -->
+  </suite> <!-- OrangeHRM Automation Suite -->
+</testng-results>
